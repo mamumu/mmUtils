@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 基础颜色 -->
+    <color name="color_transparent">#00000000</color>
+    <color name="color_blue_0D88FF">#0D88FF</color>
+    <color name="color_gray_eeeeee">#eeeeee</color>
+    <color name="color_white_ffffff">#ffffff</color>
+    <color name="color_black_000000">#000000</color>
+    <color name="color_gray_cccccc">#cccccc</color>
+</resources>

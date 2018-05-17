@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@color/color_transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_alert_dialog_msg_all_view_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_corner4_radian_dialog_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_corner4_radian_dialog_title_blue"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_alert_dialog_msg_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="提示"
+                android:textColor="@color/color_white_ffffff"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+
+        <!-- FIXME:新增消息体里图片展示 -->
+        <RelativeLayout
+            android:id="@+id/rl_alert_dialog_msg_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tv_alert_dialog_msg_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:text="信息内容"
+                android:textColor="@color/color_black_000000"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:id="@+id/iv_alert_dialog_msg_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@color/color_transparent" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_alert_dialog_msg_btns_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_gray_cccccc" />
+
+            <LinearLayout
+                android:id="@+id/ll_alert_dialog_msg_two_btn_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_alert_dialog_msg_two_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_transparent"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="@color/color_blue_0D88FF"
+                    android:textSize="17dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_gray_cccccc" />
+
+                <Button
+                    android:id="@+id/btn_alert_dialog_msg_two_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_transparent"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="@color/color_blue_0D88FF"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_alert_dialog_msg_one_btn_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_alert_dialog_msg_one_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/color_transparent"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="@color/color_blue_0D88FF"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
