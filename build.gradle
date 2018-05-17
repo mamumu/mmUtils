@@ -25,3 +25,15 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+ext {
+    superVersion = "27.0.2"
+    compileSdkVersion = 27
+    buildToolsVersion = "27.0.2"
+    designVersion = "com.android.support:design:" + superVersion
+    v4Version = "com.android.support:support-v4:" + superVersion
+    v7AppCompat = "com.android.support:appcompat-v7:" + superVersion
+    targetSdkVersion = 24
+    minSdkVersion = 16
+    versionCode = 1
+    versionName = "0.0.1"
+}
