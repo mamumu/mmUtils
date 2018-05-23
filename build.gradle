@@ -34,6 +34,6 @@ ext {
     v7AppCompat = "com.android.support:appcompat-v7:" + superVersion
     targetSdkVersion = 24
     minSdkVersion = 16
-    versionCode = 2
-    versionName = "0.0.2"
+    versionCode = 11
+    versionName = "0.1.1"
 }

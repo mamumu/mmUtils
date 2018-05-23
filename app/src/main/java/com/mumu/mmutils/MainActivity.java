@@ -1,12 +1,15 @@
 package com.mumu.mmutils;
 
+import android.app.Application;
 import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.mumu.utilslib.DeviceUtils;
 import com.mumu.utilslib.DialogUtils;
+import com.mumu.utilslib.SharedPreUtils;
 import com.mumu.utilslib.ToastUtils;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 ToastUtils.showToastS(MainActivity.this, "测试ToastUtils");
+                                DeviceUtils.getInstance(MainActivity.this).getDeviceInfo();
                             }
                         }, new DialogInterface.OnClickListener() {
                             @Override
