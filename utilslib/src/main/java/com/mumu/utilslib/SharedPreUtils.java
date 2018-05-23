@@ -3,7 +3,6 @@ package com.mumu.utilslib;
 import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.support.annotation.NonNull;
 
 /**
  * 作者　　: 朱林峰
@@ -37,7 +36,7 @@ public class SharedPreUtils {
      * @param dfValue 默认值
      * @return
      */
-    public String getValue(String key, @NonNull String dfValue) {
+    public String getValue(String key, String dfValue) {
         key = EncryptUtils.md5_32(key);
         String value = sp.getString(key, dfValue);
         if (!dfValue.equals(value)) {
@@ -65,7 +64,7 @@ public class SharedPreUtils {
      * @param key
      * @param value
      */
-    public void setValue(String key, @NonNull String value) {
+    public void setValue(String key, String value) {
         key = EncryptUtils.md5_32(key);
         value = EncryptUtils.encryptAES(CACHE_SEED, value);
         SharedPreferences.Editor editor = sp.edit();
